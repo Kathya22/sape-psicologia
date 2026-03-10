@@ -4,13 +4,13 @@ console.log("SAPE Web cargada correctamente");
 
 /* ===== MENU MOBILE ===== */
 
-const toggle = document.querySelector(".menu-toggle");
-const menu = document.querySelector(".nav-menu");
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
 if(toggle && menu){
 
-toggle.addEventListener("click", () => {
-menu.classList.toggle("active");
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
 });
 
 }

@@ -48,6 +48,7 @@ body {
 .header {
     background:#0b1f3a;
     position: relative;
+    z-index: 2000;
 }
 
 .nav{
@@ -276,7 +277,7 @@ text-align:center;
         flex-direction: column;
         position:absolute;
         top:100px;
-        right:0;
+        left:0;
         width:100%;
         background:#0b1f3a;
         padding:20px 0;
@@ -345,14 +346,7 @@ text-align:center;
     text-decoration:underline;
 }
 
-.menu-toggle{
-    display:none;
-    font-size: 28px;
-    background: none;
-    border:none;
-    color:white;
-    cursor:pointer;
-}
+
 
 .social{
 margin-top:25px;
