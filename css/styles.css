@@ -814,3 +814,50 @@ opacity:1;
 transform:translateY(0);
 
 }
+
+/* MENU MOBILE */
+
+.menu-toggle{
+display: none;
+font-size: 28px;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:768px){
+
+.nav-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.menu-toggle{
+display: block;
+}
+
+.nav-menu{
+display: none;
+flex-direction: column;
+position: absolute;
+top: 70px;
+left: 0;
+width: 100%;
+background: white;
+padding: 20px 0;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-menu li{
+margin: 10px 0;
+text-align: center;
+}
+
+.nav-menu.active{
+display: flex;
+}
+
+}
