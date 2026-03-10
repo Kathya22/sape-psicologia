@@ -825,6 +825,7 @@ transform:translateY(0);
 display: none;
 font-size: 28px;
 background: none;
+color: white;
 border: none;
 cursor: pointer;
 }
@@ -833,12 +834,6 @@ cursor: pointer;
 
 @media (max-width:768px){
 
-.nav-container{
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
 .menu-toggle{
 display: block;
 }
@@ -846,18 +841,22 @@ display: block;
 .nav-menu{
 display: none;
 flex-direction: column;
+
 position: absolute;
-top: 70px;
+top: 100px;
 left: 0;
+
 width: 100%;
-background: white;
+
+background:#0b1f3a;
 padding: 20px 0;
-box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+z-index:999;
 }
 
 .nav-menu li{
-margin: 10px 0;
+
 text-align: center;
+margin:12px 0;
 }
 
 .nav-menu.active{
