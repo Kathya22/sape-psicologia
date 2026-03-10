@@ -637,6 +637,14 @@ margin: 5px 0;
 
 /* ===== RESPONSIVE ===== */
 
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+margin-top:40px;
+}
+
 @media(max-width:768px){
 
 .about-grid{
@@ -818,6 +826,15 @@ color: white;
 border: none;
 cursor: pointer;
 }
+
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+}
+
 
 .section p{
 line-height: 1.7;
