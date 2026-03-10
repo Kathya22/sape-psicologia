@@ -30,12 +30,6 @@ body {
     margin: auto;
 }
 
-.nav-container {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo-img {
     height: 120px;
     width: auto;
@@ -60,13 +54,6 @@ body {
     justify-content: space-between;
     align-items: center;
     
-}
-
-.about-grid{
-    display:flex;
-    align-items:center;
-    gap:40px;
-    margin-top:40px;
 }
 
 .about-photo img{
@@ -266,7 +253,7 @@ text-align:center;
 @media(max-width: 768px) {
 
     .menu-toggle{
-        display:none;
+        display:block;
         font-size:28px;
         background:none;
         border:none;
@@ -670,13 +657,6 @@ color:#1f7a73;
 }
 
 
-.reveal{
-opacity:0;
-transform:translateY(40px);
-transition:all 0.8s ease;
-
-}
-
 
 /* ===== ESTILO PÁGINAS INTERNAS ===== */
 
@@ -817,39 +797,6 @@ opacity:1;
 transform:translateY(0);
 
 }
-
-/* MENU MOBILE */
-
-@media(max-width:768px){
-
-.menu-toggle{
-display:block;
-}
-.menu-toggle{
-display: block;
-flex-direction: column;
-position: absolute;
-top:100%;
-left:0;
-width:100%;
-font-size: 28px;
-background: none;
-color: #0b1f3a;
-padding:20px;
-
-}
-
-.nav-menu li{
-text-align:center;
-margin:10px 0;
-}
-
-.nav-menu.active{
-display:flex;
-}
-
-}
-
 
 .section p{
 line-height: 1.7;
