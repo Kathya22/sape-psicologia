@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-// Archivo preparado para futuras funciones
 console.log("SAPE Web cargada correctamente");
 
 /* ===== MENU MOBILE ===== */
@@ -8,11 +7,13 @@ console.log("SAPE Web cargada correctamente");
 const toggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".nav-menu");
 
-menuToggle.addEventListener("click", () => {
+if(toggle && menu){
 
-navMenu.classList.toggle("active");
-
+toggle.addEventListener("click", () => {
+menu.classList.toggle("active");
 });
+
+}
 
 
 /* ===== ANIMACIÓN AL ROLAR LA PÁGINA ===== */
@@ -90,7 +91,8 @@ logos.forEach(logo => {
 observer.observe(logo);
 });
 
-});
+
+/* ===== FORMULARIO ===== */
 
 const form = document.getElementById("formulario");
 
@@ -100,7 +102,12 @@ form.addEventListener("submit", function(){
 
 setTimeout(function(){
 
-document.getElementById("mensaje-exito").style.display = "block";
+const mensaje = document.getElementById("mensaje-exito");
+
+if(mensaje){
+mensaje.style.display = "block";
+}
+
 form.reset();
 
 },1000);
@@ -108,3 +115,5 @@ form.reset();
 });
 
 }
+
+});
