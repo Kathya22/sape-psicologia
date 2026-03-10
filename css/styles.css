@@ -859,6 +859,12 @@ text-align: center;
 margin:12px 0;
 }
 
+.nav-menu a{
+color:white;
+font-size:18px;
+display:block;
+}
+
 .nav-menu.active{
 display: flex;
 }
