@@ -45,39 +45,43 @@
 </header>
 
 <section class="formulario-contato">
+
+
 <h2>Agendar Cita</h2>
 
-<form class="form-contato">
+<form class="form-contato"
+action="https://formspree.io/f/XXXXXXXX" 
+method="POST" 
+id="formulario">
 
 <div class="grupo-form">
 <label>Nombre Completo</label>
-<input type="text" placeholder="Digite seu nome completo" required>
+<input type="text" name="nombre" placeholder="Digite seu nome completo" required>
 </div>
 
 <div class="grupo-form">
 <label>Teléfono / WhatsApp</label>
-<input type="tel" placeholder="(00) 00000-0000" required>
+<input type="tel" name="nombre" placeholder="(00) 00000-0000" required>
 </div>
 
 <div class="grupo-form">
 <label>Correo Electrónico</label>
-<input type="email" placeholder="exemplo@email.com">
+<input type="email" name="nombre" placeholder="exemplo@email.com">
 </div>
 
 <div class="grupo-form">
 <label>Tipo de atención</label>
-<select>
+<select name="tipo_atencion">
 <option>Consulta psicológica</option>
 <option>Terapia individual</option>
 <option>Terapia de pareja</option>
-<option>Terapia infantil</option>
 <option>Atención empresarial</option>
 </select>
 </div>
 
 <div class="grupo-form">
 <label>Modalidad</label>
-<select>
+<select name="modalidad">
 <option>Presencial</option>
 <option>Virtual</option>
 </select>
@@ -85,7 +89,7 @@
 
 <div class="grupo-form">
 <label>Mensaje</label>
-<textarea rows="4" placeholder="Conte brevemente sua necessidade"></textarea>
+<textarea name="mensaje" rows="4" placeholder="Conte brevemente sua necessidade"></textarea>
 </div>
 
 <button type="submit" class="botao-enviar">
@@ -95,8 +99,9 @@ Enviar solicitud
 </form>
 
 </section>
-<p style="text-align:center; margin-top:20px;">
-También puedes escribirnos directamente por WhatsApp.
+
+<p id="mensaje-exito" style="display:none; text-align:center; margin-top:20px; color:green;">
+✅ Solicitud enviada correctamente. Nos pondremos en contacto contigo.
 </p>
 
 <a href="https://wa.me/51925635303"

@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-// Archivo preparado para futuras funciones como validación de formulario
-// Mantener JS separado mejora mantenimiento y escalabilidad del proyecto
-
+// Archivo preparado para futuras funciones
 console.log("SAPE Web cargada correctamente");
+
+/* ===== MENU MOBILE ===== */
 
 const toggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".nav-menu");
@@ -13,6 +13,7 @@ toggle.addEventListener("click", () => {
 menu.classList.toggle("active");
 });
 }
+
 
 /* ===== ANIMACIÓN AL ROLAR LA PÁGINA ===== */
 
@@ -36,8 +37,8 @@ element.classList.add("active");
 
 window.addEventListener("scroll", revealOnScroll);
 
-/* activar también al cargar */
 revealOnScroll();
+
 
 /* ===== CONTADORES ===== */
 
@@ -68,4 +69,42 @@ updateCounter();
 
 });
 
+
+/* ===== ANIMACIÓN LOGOS EMPRESAS ===== */
+
+const logos = document.querySelectorAll('.logo-anim');
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+entry.target.classList.add('show');
+}
+
 });
+
+});
+
+logos.forEach(logo => {
+observer.observe(logo);
+});
+
+});
+
+const form = document.getElementById("formulario");
+
+if(form){
+
+form.addEventListener("submit", function(){
+
+setTimeout(function(){
+
+document.getElementById("mensaje-exito").style.display = "block";
+form.reset();
+
+},1000);
+
+});
+
+}
