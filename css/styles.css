@@ -41,18 +41,15 @@ body {
 /* ===== HEADER ===== */
 .header {
     background:#0b1f3a;
-    position: relative;
-    z-index: 2000;
-}
-
-.nav{
-    margin-left: auto;
+    position: sticky;
+    top:0;
 }
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     
 }
 
@@ -267,7 +264,7 @@ text-align:center;
     }
 
     .nav-menu{
-        display:flex !important;
+        display:none;
         flex-direction: column;
         position:absolute;
         top:100%;
@@ -275,7 +272,7 @@ text-align:center;
         width:100%;
         background:#0b1f3a;
         padding:20px 0;
-        z-index: 1000;
+        z-index: 3000;
 
     }
 
