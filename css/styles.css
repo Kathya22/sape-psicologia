@@ -250,6 +250,10 @@ text-align:center;
 }
 
 /* ===== RESPONSIVE DESKTOP ===== */
+
+.menu-toggle{
+    display: none;
+}
 @media(max-width: 768px) {
 
     .menu-toggle{
@@ -263,7 +267,7 @@ text-align:center;
     }
 
     .nav-menu{
-        display:none;
+        display:flex !important;
         flex-direction: column;
         position:absolute;
         top:100%;
@@ -861,7 +865,65 @@ margin-bottom:15px;
 grid-template-columns:1fr;
 
 }
+}
+
+.estadisticas h2{
+color:#0b1f3a;
+font-size: 32px;
+margin-bottom:30px;
+}
+
+.estadisticas p{
+color:#0b1f3a;
+font-size:18px;
+text-align: center;
+}
+
+.estadisticas .stat{
+text-align:center;
+}
+
+/* COLUMNAS SERVICIOS */
+
+.servicios-grid{
+display:grid;
+grid-template-columns:1fr;
+gap:50px;
+margin-top:40px;
+}
+
+.servicio-columna h2{
+margin-bottom:20px;
+}
+
+.servicio-columna p{
+margin-top:15px;
+line-height:1.6;
+}
+
+.lista-servicios{
+padding-left:20px;
+line-height:1.8;
+}
+
+/* Desktop */
+
+@media(min-width:900px){
+
+.servicios-grid{
+grid-template-columns:1fr 1fr;
+}
 
 }
 
+.servicio-columna{
+padding:10px 20px;
+}
 
+.servicio-columna h2{
+margin-bottom:20px;
+}
+
+.lista-servicios li{
+margin-bottom:8px;
+}
