@@ -43,6 +43,7 @@ body {
     background:#0b1f3a;
     position: sticky;
     top:0;
+    z-index:5000;
 }
 
 .nav-container {
@@ -252,12 +253,6 @@ text-align:center;
     display: none;
 }
 @media(max-width: 768px) {
-
-    .nav-menu{
-        display:flex;
-        position:static;
-        flex-direction:row;
-    }
 
     .menu-toggle{
         display:block;

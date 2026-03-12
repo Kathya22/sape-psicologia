@@ -6,14 +6,21 @@ console.log("SAPE Web cargada correctamente");
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-menu");
-
+const navLinks = document.querySelectorAll(".nav-menu a");
 if(menuToggle && navMenu){
 
 menuToggle.addEventListener("click", function(){
 navMenu.classList.toggle("active");
-});
 
+});
 }
+
+
+navLinks.forEach(link=>{
+link.addEventListener("click",()=>{
+navMenu.classList.remove("active");
+});
+});
 
 /* ANIMACIÓN SCROLL */
 
