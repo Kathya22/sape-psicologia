@@ -51,7 +51,7 @@ body {
 }
 
 .nav-container {
-    display: none;
+    display:flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -75,6 +75,13 @@ body {
     font-weight: bold;
     font-size: 17px;
     font-weight: 500;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
 }
 
 
@@ -254,11 +261,11 @@ text-align:center;
 
 /* ===== RESPONSIVE DESKTOP ===== */
 
-.menu-toggle{
+@media(max-width: 768px) {
+
+    .menu-toggle{
     display: none;
 }
-
-@media(max-width: 768px) {
 
     .nav-menu{
         display:none;
@@ -267,12 +274,10 @@ text-align:center;
         top:70px;
         left:0;
         width:100%;
-        max-width: 100%;
         background:#0b1f3a;
         padding:20px 0;
-        z-index: 000;
-        box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-
+        z-index: 2000;
+      
     }
 
     .nav-container {
@@ -290,14 +295,12 @@ text-align:center;
     }
 
     .nav-menu a{
-        color:white;
         font-size:18px;
         display:block;
         padding:10px;
     }
     
 }
-
 .card ul {
     text-align: left; /* lista alinhada à esquerda */
     margin-bottom: 20px;
@@ -443,11 +446,19 @@ font-style:normal;
 
 @media(min-width:768px){
 
+.nav-menu{
+    display:flex !important;
+}
+
+.menu-toggle{
+    display:none;
+}
+
+}
+
 .testimonios-grid{
 
 grid-template-columns:repeat(3,1fr);
-
-}
 
 }
 
@@ -932,3 +943,5 @@ margin-bottom:20px;
 .lista-servicios li{
 margin-bottom:8px;
 }
+      
+   
