@@ -653,7 +653,7 @@ margin-top:40px;
 @media(max-width:768px){
 
     .menu-toggle{
-        display: block;
+        display:flex;
     }
 
 .nav-menu{
