@@ -447,7 +447,7 @@ font-style:normal;
 @media(min-width:768px){
 
 .nav-menu{
-    display:flex !important;
+    display:flex;
 }
 
 .menu-toggle{
@@ -651,6 +651,10 @@ margin-top:40px;
 }
 
 @media(max-width:768px){
+
+    .menu-toggle{
+        display: block;
+    }
 
 .nav-menu{
 box-shadow:0 8px 20px rgba(0,0,0,0.25);
