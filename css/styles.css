@@ -1,3 +1,7 @@
+html, body{
+    overflow-x:hidden;
+    width:100%;
+}
 /* ===== VARIABLES DE COLOR PARA CONSISTENCIA ===== */
 :root {
     --azul-principal: #0b1f3a;
@@ -31,7 +35,7 @@ body {
 }
 
 .logo-img {
-    height: 120px;
+    height: 80px;
     width: auto;
     border-radius: 20%;
     max-width: fit-content;
@@ -47,10 +51,11 @@ body {
 }
 
 .nav-container {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding:10px 20px;
     
 }
 
@@ -252,29 +257,27 @@ text-align:center;
 .menu-toggle{
     display: none;
 }
-@media(max-width: 768px) {
 
-    .menu-toggle{
-        display:block;
-        font-size:28px;
-        background:none;
-        border:none;
-        color:white;
-        cursor:pointer;
-        
-    }
+@media(max-width: 768px) {
 
     .nav-menu{
         display:none;
         flex-direction: column;
-        position:fixed;
-        top:100%;
+        position:absolute;
+        top:70px;
         left:0;
         width:100%;
+        max-width: 100%;
         background:#0b1f3a;
         padding:20px 0;
-        z-index: 2000;
+        z-index: 000;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.3);
 
+    }
+
+    .nav-container {
+        position: relative; 
+        padding: 10px 0;
     }
 
     .nav-menu.active{
@@ -282,15 +285,15 @@ text-align:center;
     }
 
     .nav-menu li{
-    text-align:center;
-    margin:10px 0;
+        text-align:center;
+        margin:10px 0;
     }
 
     .nav-menu a{
-    color:white;
-    font-size:18px;
-    display:block;
-    padding:10px;
+        color:white;
+        font-size:18px;
+        display:block;
+        padding:10px;
     }
     
 }
