@@ -1,163 +1,190 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Contacto | SAPE Psicología</title>
+<title>Contacto | SAPE</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- CSS -->
 <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header class="header">
+  <div class="container">
 
-<div class="container nav-container">
+    <nav class="navbar navbar-expand-lg">
 
-<div class="logo">
-<img src="img/logo-sape.jpeg" alt="Logo SAPE" class="logo-img">
-</div>
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo-sape.jpeg" class="logo-img">
+      </a>
 
-<button class="menu-toggle">☰</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        ☰
+      </button>
 
-<nav>
-<ul class="nav-menu">
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="quienes-somos.html">Quiénes Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="area-clinica.html">Área Clínica</a></li>
+          <li class="nav-item"><a class="nav-link" href="area-empresarial.html">Área Empresarial</a></li>
+          <li class="nav-item"><a class="nav-link" href="metodologia.html">Metodología</a></li>
+          <li class="nav-item"><a class="nav-link" href="empresas.html">Empresas</a></li>
+          <li class="nav-item">
+            <a class="btn btn-success ms-lg-3 px-4" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
 
-<li><a href="index.html">Inicio</a></li>
-<li><a href="quienes-somos.html">Quiénes Somos</a></li>
-<li><a href="area-clinica.html">Área Clínica</a></li>
-<li><a href="area-empresarial.html">Área Empresarial</a></li>
-<li><a href="metodologia.html">Metodología</a></li>
-<li><a href="empresas.html">Empresas</a></li>
-<li><a href="contacto.html">Contacto</a></li>
-<li><a href="contacto.html" class="btn-agendar">Agendar Cita</a></li>
+    </nav>
 
-</ul>
-</nav>
-
-</div>
-
+  </div>
 </header>
 
-<section class="formulario-contato">
-
-
-<h2>Agendar Cita</h2>
-
-<form class="form-contato"
-action="https://formspree.io/f/XXXXXXXX" 
-method="POST" 
-id="formulario">
-
-<div class="grupo-form">
-<label>Nombre Completo</label>
-<input type="text" name="nombre" placeholder="Escribe tu nombre completo" required>
-</div>
-
-<div class="grupo-form">
-<label>Teléfono / WhatsApp</label>
-<input type="tel" name="telefono" placeholder="(00) 00000-0000" required>
-</div>
-
-<div class="grupo-form">
-<label>Correo Electrónico</label>
-<input type="email" name="correo electronico" placeholder="exemplo@email.com">
-</div>
-
-<div class="grupo-form">
-<label>Tipo de atención</label>
-<select name="tipo_atencion">
-<option>Consulta psicológica</option>
-<option>Terapia individual</option>
-<option>Terapia de pareja</option>
-<option>Atención empresarial</option>
-</select>
-</div>
-
-<div class="grupo-form">
-<label>Modalidad</label>
-<select name="modalidad">
-<option>Presencial</option>
-<option>Virtual</option>
-</select>
-</div>
-
-<div class="grupo-form">
-<label>Mensaje</label>
-<textarea name="mensaje" rows="4" placeholder="Cuéntanos de forma breve lo que necesitas"></textarea>
-</div>
-
-<button type="submit" class="botao-enviar">
-Enviar solicitud
-</button>
-
-</form>
-
+<!-- HERO -->
+<section class="hero-empresarial text-white d-flex align-items-center">
+  <div class="container text-center">
+    <h1 class="fw-bold display-5">Contacto</h1>
+    <p class="lead mt-3">Agenda tu atención psicológica con nosotros</p>
+  </div>
 </section>
 
-<p id="mensaje-exito" style="display:none; text-align:center; margin-top:20px; color:green;">
-✅ Solicitud enviada correctamente. Nos pondremos en contacto contigo.
-</p>
+<!-- FORMULARIO -->
+<section class="py-5 bg-light">
+  <div class="container">
 
-<a href="https://wa.me/51925635303"
-class="btn-secondary"
-style="display:block; width:fit-content; margin:20px auto;"
-target="_blank">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
 
-Contactar por WhatsApp
+        <div class="card shadow-sm border-0 p-4">
 
-</a>
+          <h2 class="text-center mb-4">Agendar Cita</h2>
 
-</div>
+          <form class="form-contato row g-3"
+          action="https://formspree.io/f/XXXXXXXX" 
+          method="POST" 
+          id="formulario">
 
-
-         <footer class="footer">
-             <div class="container text-center">
-                 <p><strong>SAPE Servicio de Psicología</strong></p>
-
-                 <p>Servicio de Atención y Asesoría Psicológica Clínica y Empresarial S.A.C</p>
-
-                 <p>📍 Calle Las Dalias 101 – Chaclacayo</p>
-
-                <p>📞 <a href="tel:+51925635303">925 635 303</a></p>
-
-                 <p>✉️ <a href="mailto:sapepsicologos@gmail.com">sapepsicologos@gmail.com</a></p>
-
-            <div class="social">
-
-            <a href="https://www.instagram.com/sapepsicologia" target="_blank">Instagram
-            <i class="fab fa-instagram"></i>
-            </a>
-
-            <a href="https://www.facebook.com/sapepsicologos" target="_blank">Facebook
-            <i class="fab fa-facebook"></i>
-            </a>
-
-            <a href="https://www.threads.net/@sapepsicologia" target="_blank">Threads
-            <i class="fab fa-threads"></i>
-            </a>
-
-            <a href="https://www.youtube.com/@sapepsicologos" target="_blank">Youtube
-            <i class="fab fa-youtube"></i>
-            </a>
-
-             <a href="https://www.tiktok.com/@sapepsicologos" target="_blank">TikTok
-            <i class="fab fa-tiktok"></i>
-            </a>
-
+            <div class="col-md-6">
+              <label class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" name="nombre" placeholder="Escribe tu nombre completo" required>
             </div>
 
-             </div>
-        </footer>
+            <div class="col-md-6">
+              <label class="form-label">Teléfono / WhatsApp</label>
+              <input type="tel" class="form-control" name="telefono" placeholder="(00) 00000-0000" required>
+            </div>
 
+            <div class="col-md-6">
+              <label class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" name="correo electronico" placeholder="exemplo@email.com">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Tipo de atención</label>
+              <select class="form-select" name="tipo_atencion">
+                <option>Consulta psicológica</option>
+                <option>Terapia individual</option>
+                <option>Terapia de pareja</option>
+                <option>Atención empresarial</option>
+              </select>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Modalidad</label>
+              <select class="form-select" name="modalidad">
+                <option>Presencial</option>
+                <option>Virtual</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" name="mensaje" rows="4" placeholder="Cuéntanos de forma breve lo que necesitas"></textarea>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-success w-100 py-2">
+                Enviar solicitud
+              </button>
+            </div>
+
+          </form>
+
+          <p id="mensaje-exito" style="display:none; text-align:center; margin-top:20px; color:green;">
+            ✅ Solicitud enviada correctamente. Nos pondremos en contacto contigo.
+          </p>
+
+        </div>
+
+        <!-- WHATSAPP -->
+        <div class="text-center mt-4">
+          <a href="https://wa.me/51925635303"
+          class="btn btn-outline-success px-4 py-2"
+          target="_blank">
+            <i class="bi bi-whatsapp"></i> Contactar por WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<script src="js/script.js"></script>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+        <h5>SAPE Servicio de Psicología</h5>
+        <p>
+          Servicio de Atención y Asesoría Psicológica Clínica y Empresarial
+          S.A.C
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h5>Contacto</h5>
+        <p>📍 Calle Las Dalias 101 – Chaclacayo</p>
+        <p>📞 925 635 303</p>
+        <p>✉️ sapepsicologos@gmail.com</p>
+      </div>
+
+      <div class="col-lg-4 text-center">
+        <h5>Redes Sociales</h5>
+
+        <a href="https://www.instagram.com/sapepsicologia" target="_blank">Instagram <i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/sapepsicologos" target="_blank">Facebook <i class="bi bi-facebook"></i></a>
+        <a href="https://threads.net/@sapepsicologia" target="_blank">Threads <i class="bi bi-threads"></i></a>
+        <a href="https://www.youtube.com/@sapepsicologos" target="_blank">Youtube <i class="bi bi-youtube"></i></a>
+        <a href="https://www.tiktok.com/@sapepsicologos" target="_blank">TikTok <i class="bi bi-tiktok"></i></a>
+
+      </div>
+
+    </div>
+
+    <hr class="mt-5" />
+    <p class="text-center small">© 2026 SAPE Servicio de Psicología</p>
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
