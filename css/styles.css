@@ -40,7 +40,6 @@ html, body {
   background: linear-gradient(135deg, #198754, #157347);
   color: rgb(248, 246, 246);
   padding: 100px 0;
-  min-height: 100vh; /* ocupa toda la pantalla */
   display: flex;
   align-items: center;
 }
@@ -221,7 +220,8 @@ html, body {
   .stats h2 {
     font-size: 30px;
   }
-
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
 }
-
-
