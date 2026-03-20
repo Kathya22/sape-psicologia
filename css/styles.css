@@ -25,13 +25,8 @@ body {
 
 /* NAVBAR */
 
-.logo-img{
-  max-height: 60px;
-  width: auto;
-}
-
 .logo-img {
-    height: 80px;
+    height: 50px;
     width: auto;
     border-radius: 20%;
     max-width: fit-content;
@@ -358,6 +353,10 @@ body {
 
 @media(max-width: 768px) {
 
+    .logo-img{
+      height: 40px;
+}
+
     .menu-toggle{
     display: none;
 }
@@ -372,7 +371,7 @@ body {
         background:#0b1f3a;
         padding:20px 0;
         z-index: 2000;
-      
+     
     }
 
     .nav-container {
@@ -896,4 +895,9 @@ margin-bottom:8px;
               url('../assets/img/team.jpeg');
   background-size: cover;
   background-position: center;
+}
+
+.contact-card {
+  max-width: 900px;
+  margin: 0 auto;
 }
