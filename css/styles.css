@@ -40,8 +40,15 @@ html, body {
   background: linear-gradient(135deg, #198754, #157347);
   color: rgb(248, 246, 246);
   padding: 100px 0;
+  min-height: auto;
   display: flex;
   align-items: center;
+}
+
+.hero-img{
+    width:100%;
+    height: auto;
+    display: block;
 }
 
 .hero-empresarial,
@@ -196,13 +203,13 @@ html, body {
   }
 
   .hero {
-    padding: 80px 20px;
+    padding: 60px 20px;
     min-height: auto;
     text-align: center;
   }
 
   .hero-img{
-    margin-top:20px;
+    margin-top: 20px;
   }
 
   .hero h1 {
@@ -223,5 +230,10 @@ html, body {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+
+.section{
+    position: relative;
+    z-index:1;
   }
 }
