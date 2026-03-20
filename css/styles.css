@@ -43,6 +43,7 @@ html, body {
   min-height: auto;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .hero-img{

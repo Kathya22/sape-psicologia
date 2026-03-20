@@ -41,9 +41,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function heroParallax() {
     if (!heroImage) return;
 
+    if (window.innerWidth <= 768) return;
+
     const scroll = window.scrollY;
 
-    heroImage.style.transform = `translate3d(0, ${scroll * 0.25}px, 0)`;
+    heroImage.style.transform = `translate3d(0, ${scroll * 0.2}px, 0)`;
   }
 
   window.addEventListener("scroll", heroParallax);
