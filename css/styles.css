@@ -521,6 +521,13 @@ html, body {
     position: relative;
     z-index:1;
   }
+
+  .problema-card {
+    margin-bottom: 15px;
+    font-size: 15px;
+    padding: 18px;
+  }
+
 }
 
 .texto-justificado {
