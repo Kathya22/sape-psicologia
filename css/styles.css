@@ -55,12 +55,18 @@ html, body {
 .hero-empresarial,
 .hero-quienes,
 .hero-clinica {
-  height: 300px;
-  width:auto;
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(135 deg, #0b1f3a, #3fa796);
+  height: 220px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
+.hero-clinica h1{
+  margin:0;
+}
 .hero-empresarial {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
               url('../assets/img/team.jpeg');
@@ -186,7 +192,7 @@ html, body {
 
 /* ANIMACIÓN */
 .reveal {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(40px);
   transition: 0.8s;
 }
@@ -215,6 +221,15 @@ html, body {
 
   .hero h1 {
     font-size: 28px;
+  }
+
+  .hero-clinica{
+    height: 180px;
+    padding:20px;
+  }
+
+  .hero-clinica h1{
+    font-size: 26px;
   }
 
   .about-grid {
