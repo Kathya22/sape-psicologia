@@ -22,5 +22,6 @@ mail($destinatario, "Nueva solicitud desde la web", $contenido, $headers);
 
 // Redireccionar después de enviar
 header("Location: gracias.html");
+exit;
 
 ?>
