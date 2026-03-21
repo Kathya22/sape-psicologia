@@ -249,3 +249,21 @@ html, body {
     z-index:1;
   }
 }
+
+.texto-justificado {
+  text-align: justify;
+}
+
+.problema-card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.problema-card:hover {
+  transform: translateY(-5px);
+}
