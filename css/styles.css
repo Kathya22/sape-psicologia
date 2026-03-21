@@ -55,7 +55,7 @@ html, body {
 .hero-empresarial,
 .hero-quienes,
 .hero-clinica {
-  background: linear-gradient(135 deg, #0b1f3a, #3fa796);
+  background: linear-gradient(135deg, #0b1f3a, #3fa796);
   height: 220px;
   display:flex;
   align-items:center;
@@ -66,10 +66,6 @@ html, body {
 
 .hero-clinica h1{
   margin:0;
-}
-.hero-empresarial {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-              url('../assets/img/team.jpeg');
 }
 
 /* IMAGES */
