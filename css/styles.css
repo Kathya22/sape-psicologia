@@ -1,4 +1,6 @@
+/* ============================= */
 /* RESET */
+/* ============================= */
 * {
   margin: 0;
   padding: 0;
@@ -11,23 +13,42 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ============================= */
 /* VARIABLES */
+/* ============================= */
 :root {
   --azul-principal: #0b1f3a;
   --verde-acento: #3fa796;
   --gris-claro: #f4f6f9;
 }
 
+/* ============================= */
 /* NAVBAR */
+/* ============================= */
 .logo-img {
-  height: 50px;
+  height: 100px;
   width: auto;
-  border-radius: 20%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
 .navbar {
+  padding: 10px 0;
   z-index: 1000;
   transition: all 0.3s ease;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  align-items: center;
 }
 
 .navbar.scrolled {
@@ -35,21 +56,21 @@ html, body {
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
+/* ============================= */
 /* HERO */
+/* ============================= */
 .hero {
   background: linear-gradient(135deg, #198754, #157347);
-  color: rgb(248, 246, 246);
+  color: #fff;
   padding: 100px 0;
-  min-height: auto;
   display: flex;
   align-items: center;
-  overflow: hidden;
 }
 
-.hero-img{
-    width:100%;
-    height: auto;
-    display: block;
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero-empresarial,
@@ -64,18 +85,18 @@ html, body {
   color: white;
 }
 
-.hero-clinica h1{
-  margin:0;
-}
-
-/* IMAGES */
+/* ============================= */
+/* IMÁGENES */
+/* ============================= */
 .img-fluid {
   border-radius: 10px;
 }
 
+/* ============================= */
 /* SERVICES */
+/* ============================= */
 .service-card {
-  background:#fff ;
+  background: #fff;
   max-width: 350px;
   margin: auto;
   border-radius: 14px;
@@ -92,25 +113,26 @@ html, body {
 
 .service-card p {
   text-align: justify;
-  text-justify: inter-word;
 }
 
 .service-card h5 {
-  min-height: 60px; /* evita que los títulos desordenen las cards */
+  min-height: 60px;
 }
 
 .service-card i {
   display: inline-block;
   padding: 15px;
   border-radius: 50%;
-  background-color: rgba(25, 135, 84, 0.1); /* verde suave */
+  background-color: rgba(25, 135, 84, 0.1);
 }
 
 .service-icon {
   font-size: 60px;
 }
 
+/* ============================= */
 /* CLIENT LOGOS */
+/* ============================= */
 .client-logo {
   max-width: 130px;
   margin: auto;
@@ -122,29 +144,30 @@ html, body {
   transform: scale(1.08);
 }
 
+/* ============================= */
 /* BENEFITS */
+/* ============================= */
 .benefit-item {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: 15px;
   margin-bottom: 20px;
 }
 
 .benefit-icon {
   min-width: 50px;
-  width:50px;
   height: 50px;
-  font-size: 18px;
   background: #198754;
   color: white;
   display:flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  flex-shrink: 0;
 }
 
+/* ============================= */
 /* STATS */
+/* ============================= */
 .stats {
   background: #198754;
   color: white;
@@ -156,7 +179,9 @@ html, body {
   font-weight: bold;
 }
 
+/* ============================= */
 /* TESTIMONIOS */
+/* ============================= */
 .testimonial-card {
   background: white;
   padding: 30px;
@@ -183,99 +208,9 @@ html, body {
   font-weight: 600;
 }
 
-/* CTA */
-.cta {
-  background: var(--verde-acento);
-  color: white;
-  padding: 80px 0;
-}
-
-/* FOOTER (UNIFICADO) */
-.footer {
-  background: var(--azul-principal);
-  color: white;
-  padding: 50px 0;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.footer a:hover {
-  color: var(--verde-acento);
-}
-
-/* ANIMACIÓN */
-.reveal {
-  opacity: 1;
-  transform: translateY(40px);
-  transition: 0.8s;
-}
-
-.reveal.active {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-
-  .logo-img {
-    height: 40px;
-  }
-
-  .hero {
-    padding: 60px 20px;
-    min-height: auto;
-    text-align: center;
-  }
-
-  .hero-img{
-    margin-top: 20px;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .hero-clinica{
-    height: 180px;
-    padding:20px;
-  }
-
-  .hero-clinica h1{
-    font-size: 26px;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .valores-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stats h2 {
-    font-size: 30px;
-  }
-  .reveal {
-    opacity: 1;
-    transform: none;
-  }
-
-.section{
-    position: relative;
-    z-index:1;
-  }
-}
-
-.texto-justificado {
-  text-align: justify;
-}
-
+/* ============================= */
+/* PROBLEMAS */
+/* ============================= */
 .problema-card {
   background: white;
   padding: 20px;
@@ -286,184 +221,43 @@ html, body {
   transition: 0.3s;
 }
 
-.problema-card:hover {
+.problema-card:hover,
+.problema-card:active {
   transform: translateY(-5px);
   background-color:#157347;
   color: white;
-
 }
 
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ============================= */
+/* METODOLOGÍA */
+/* ============================= */
+.metodologia-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-height: 350px;
+  object-fit: cover;
 }
 
-html, body {
-  overflow-x: hidden;
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+/* ============================= */
+/* TEXTO */
+/* ============================= */
+.texto-justificado {
+  text-align: justify;
 }
 
-/* VARIABLES */
-:root {
-  --azul-principal: #0b1f3a;
-  --verde-acento: #3fa796;
-  --gris-claro: #f4f6f9;
-}
-
-/* NAVBAR */
-.logo-img {
-  height: 50px;
-  width: auto;
-  border-radius: 20%;
-}
-
-.navbar {
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
-
-.navbar.scrolled {
-  background: white;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(135deg, #198754, #157347);
-  color: rgb(248, 246, 246);
-  padding: 100px 0;
-  min-height: auto;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.hero-img{
-    width:100%;
-    height: auto;
-    display: block;
-}
-
-.hero-empresarial,
-.hero-quienes,
-.hero-clinica {
-  background: linear-gradient(135deg, #0b1f3a, #3fa796);
-  height: 220px;
-  display:flex;
-  align-items:center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-
-.hero-clinica h1{
-  margin:0;
-}
-
-/* IMAGES */
-.img-fluid {
-  border-radius: 10px;
-}
-
-/* SERVICES */
-.service-card {
-  max-width: 350px;
-  margin: auto;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  transition: 0.3s;
-  padding: 20px;
-}
-
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
-}
-
-.service-icon {
-  font-size: 60px;
-}
-
-/* CLIENT LOGOS */
-.client-logo {
-  max-width: 130px;
-  margin: auto;
-  display: block;
-  transition: 0.3s;
-}
-
-.client-logo:hover {
-  transform: scale(1.08);
-}
-
-/* BENEFITS */
-.benefit-item {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.benefit-icon {
-  width: 40px;
-  height: 40px;
-  background: #198754;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-/* STATS */
-.stats {
-  background: #198754;
-  color: white;
-  padding: 80px 0;
-}
-
-.stats h2 {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-/* TESTIMONIOS */
-.testimonial-card {
-  background: white;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  transition: 0.3s;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-}
-
-.testimonial-text {
-  font-style: italic;
-  color: #555;
-}
-
-.testimonial-stars {
-  color: #ffc107;
-}
-
-.testimonial-author {
-  font-weight: 600;
-}
-
+/* ============================= */
 /* CTA */
+/* ============================= */
 .cta {
   background: var(--verde-acento);
   color: white;
   padding: 80px 0;
 }
 
-/* FOOTER (UNIFICADO) */
+/* ============================= */
+/* FOOTER */
+/* ============================= */
 .footer {
   background: var(--azul-principal);
   color: white;
@@ -481,7 +275,9 @@ html, body {
   color: var(--verde-acento);
 }
 
-/* ANIMACIÓN */
+/* ============================= */
+/* ANIMACIONES */
+/* ============================= */
 .reveal {
   opacity: 1;
   transform: translateY(40px);
@@ -493,20 +289,21 @@ html, body {
   transform: translateY(0);
 }
 
+/* ============================= */
 /* RESPONSIVE */
+/* ============================= */
 @media (max-width: 768px) {
 
   .logo-img {
-    height: 40px;
+    height: 45px;
   }
 
   .hero {
     padding: 60px 20px;
-    min-height: auto;
     text-align: center;
   }
 
-  .hero-img{
+  .hero-img {
     margin-top: 20px;
   }
 
@@ -514,74 +311,25 @@ html, body {
     font-size: 28px;
   }
 
-  .hero-clinica{
+  .hero-clinica {
     height: 180px;
     padding:20px;
   }
 
-  .hero-clinica h1{
+  .hero-clinica h1 {
     font-size: 26px;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .valores-grid {
-    grid-template-columns: 1fr;
   }
 
   .stats h2 {
     font-size: 30px;
   }
-  .reveal {
-    opacity: 1;
-    transform: none;
-  }
 
-.section{
-    position: relative;
-    z-index:1;
+  .reveal {
+    transform: none;
   }
 
   .problema-card {
     margin-bottom: 15px;
     font-size: 15px;
-    padding: 18px;
   }
-
-}
-
-.texto-justificado {
-  text-align: justify;
-}
-
-.problema-card {
-  background: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  font-weight: 500;
-  transition: 0.3s;
-}
-
-.problema-card:hover {
-  transform: translateY(-5px);
-  background-color:#157347;
-  color: white;
-
-}
-.problema-card:active {
-  transform: translateY(-5px);
-  background-color: #157347;
-  color: white;
-}
-
-.metodologia-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  max-height: 350px; /* controla tamaño */
-  object-fit: cover;
 }
