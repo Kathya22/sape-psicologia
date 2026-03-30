@@ -577,3 +577,11 @@ html, body {
   background-color: #157347;
   color: white;
 }
+
+.metodologia-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-height: 350px; /* controla tamaño */
+  object-fit: cover;
+}
