@@ -26,10 +26,8 @@ html, body {
 /* NAVBAR */
 /* ============================= */
 .logo-img {
-  height: 80px;
-  width: auto;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
+  height: 70px;
+  
 }
 
 .logo-img:hover {
@@ -295,7 +293,7 @@ html, body {
 @media (max-width: 768px) {
 
   .logo-img {
-    height: 65px;
+    height: 55px;
   }
 
   .hero {
